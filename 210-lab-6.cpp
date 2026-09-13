@@ -7,11 +7,15 @@ using namespace std;
 
 const int SIZE = 5;
 
-void enterData();
-string outputData();
-double sum();
+void enterArrayData(double*);
+void outputArrayData(double*);
+double sumArray(double*);
 
 int main() {
+    double *data = nullptr;
+    data = new double[SIZE];
+
+    delete [] data;
 
     return 0;
 }
