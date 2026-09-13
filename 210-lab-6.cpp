@@ -5,6 +5,11 @@
 #include <iostream>
 using namespace std;
 
+const int SIZE = 5;
+
+void enterData();
+string outputData();
+double sum();
 
 int main() {
 
