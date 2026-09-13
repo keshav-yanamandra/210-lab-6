@@ -20,6 +20,8 @@ int main() {
     enterArrayData(data);
     outputArrayData(data);
 
+    cout << "Sum of values: " << sumArray(data) << endl;
+
 
     // delete the array when done
     delete [] data;
@@ -46,4 +48,15 @@ void outputArrayData(double *arr) {
     }
 
     cout << endl;
+}
+
+//last function to sum
+double sumArray(double *arr) {
+    double sum = 0;
+
+    for (int i = 0; i < SIZE; i++) {
+        sum += *(arr + i);
+    }
+
+    return sum;
 }
