@@ -16,8 +16,9 @@ int main() {
     double *data = nullptr;
     data = new double[SIZE];
 
-    //call funtion
+    //call funtions
     enterArrayData(data);
+    outputArrayData(data);
 
 
     // delete the array when done
@@ -35,4 +36,14 @@ void enterArrayData(double *arr) {
     }
 
     cout << "Data entry complete." << endl;
+}
+
+void outputArrayData(double *arr) {
+    cout << "Outputting array elements: ";
+
+    for (int i = 0; i < SIZE; i++) {
+        cout << *(arr + i) << " ";
+    }
+
+    cout << endl;
 }
